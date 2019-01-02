@@ -1,1 +1,1 @@
-# DIKUNotes
+# DIKU Notes
