@@ -8,7 +8,7 @@ This is a collection of information, notes and resources about courses given at 
 If you are attending courses at DIKU, please consider contributing by adding suitable information to the course folders (see guidelines below). Here, "suitable information" includes:
   * Notes on material covered during lectures.
   * Solutions to exercises given during exercise classes.
-  * Solutions to previous exam sets.
+  * Solutions to previous exam sets, as well as the exam sets themselves.
   * Reviews of elective courses, so as to help students in their choice of electives.
 
 Information *not* suitable for this repository includes:
