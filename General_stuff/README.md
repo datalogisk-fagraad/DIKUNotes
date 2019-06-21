@@ -1,1 +1,0 @@
-This folder is intended to store files that aren't relevant for any particular course, but are still useful as a student at DIKU.
