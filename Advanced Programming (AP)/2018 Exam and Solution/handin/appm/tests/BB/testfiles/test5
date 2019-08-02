@@ -1,0 +1,4 @@
+package {
+  name baz;
+  version 6.1.2;
+}

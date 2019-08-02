@@ -1,0 +1,6 @@
+package {
+  name this-name-is-simple;
+  version 2.3;
+  description "The foo application";
+  requires bar >= 1.0;
+}

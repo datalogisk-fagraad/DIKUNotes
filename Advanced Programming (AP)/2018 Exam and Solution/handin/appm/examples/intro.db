@@ -1,0 +1,29 @@
+package {
+  version 2.3;
+  description "The foo application";
+  requires bar >= 1.0;
+  name foo;
+}
+
+package {
+  version 1.0;
+  description "The bar library";
+  name bar
+}
+
+package {
+  -- A WILD COMMENT APPEARS!
+  name"--EMIL''""'"; -- SUCH COmments
+  confliCTS baz < 3.4, baz >= 5.0.3;
+  description "The bar library, new API";
+}
+
+package {
+  version 6.1.2;
+  name baz;
+}
+
+package {
+  name Emil;
+  ; ; ; ; 
+}

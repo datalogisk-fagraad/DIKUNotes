@@ -1,0 +1,78 @@
+package {
+  name a;
+  version 5.0;
+  requires b >= 4.0, c >= 5, d >= 4
+}
+
+package {
+  name a;
+  version 4.0;
+  requires b >= 3.0, c < 5, d >= 4;
+  conflicts e < 4
+}
+
+package {
+  name a;
+  version 3.0;
+  requires b >= 2.0, c, d >= 3;
+}
+
+package {
+  name b;
+  version 2.5;
+  conflicts d >= 2
+}
+
+package {
+  name b;
+  version 3.0;
+}
+
+package {
+  name b;
+  version 5.0;
+  conflicts d < 4.0
+}
+
+--package {
+--    name c;
+--    version 7.0;
+--    requires b
+--}
+
+--package {
+--    name c;
+--    version 5.0;
+--    conflicts b >= 4.5
+--}
+
+package {
+    name c;
+    version 4.0
+}
+
+package {
+    name d;
+    version 3.0
+}
+
+package {
+    name d;
+    version 5.0;
+    conflicts e
+}
+
+package {
+    name d;
+    version 4.5
+}
+
+package {
+    name e;
+    version 5.0
+}
+
+package {
+    name e;
+    version 3.0
+}

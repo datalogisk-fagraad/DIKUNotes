@@ -1,0 +1,3 @@
+DB [Pkg {name = P "foo", ver = V [VN 2 "",VN 3 "qwe"],
+         desc = "The foo application",
+	 deps = [(P "bar",(True,V [VN 1 "",VN 0 ""],V [VN 1000000 ""]))]}]

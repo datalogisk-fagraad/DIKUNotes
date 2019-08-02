@@ -1,0 +1,9 @@
+package {
+  name a;
+  requires d, c;
+}
+
+package {
+    name d;
+    conflicts e
+}

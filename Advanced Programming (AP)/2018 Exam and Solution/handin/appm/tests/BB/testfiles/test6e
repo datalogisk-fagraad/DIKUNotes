@@ -1,0 +1,2 @@
+DB [Pkg {name = P "bar", ver = V [VN 1 ""],
+         desc = "The bar library", deps = []}]

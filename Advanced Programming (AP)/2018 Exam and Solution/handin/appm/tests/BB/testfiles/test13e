@@ -1,0 +1,8 @@
+DB [ Pkg { name = P "a"
+         , ver = V [VN 5 "",VN 0 ""]
+         , desc = ""
+         , deps = [ (P "b",(True,V [VN 4 "",VN 0 ""],V [VN 1000000 ""]))
+                  , (P "c",(True,V [VN 5 ""],V [VN 1000000 ""]))
+                  , (P "d",(True,V [VN 4 ""],V [VN 1000000 ""]))]}
+    
+    , Pkg {name = P "a", ver = V [VN 4 "",VN 0 ""], desc = "", deps = [(P "b",(True,V [VN 3 "",VN 0 ""],V [VN 1000000 ""])),(P "c",(True,V [VN 0 ""],V [VN 5 ""])),(P "d",(True,V [VN 4 ""],V [VN 1000000 ""])),(P "e",(False,V [VN 4 ""],V [VN 1000000 ""]))]},Pkg {name = P "a", ver = V [VN 3 "",VN 0 ""], desc = "", deps = [(P "b",(True,V [VN 2 "",VN 0 ""],V [VN 1000000 ""])),(P "c",(True,V [VN 0 ""],V [VN 1000000 ""])),(P "d",(True,V [VN 3 ""],V [VN 1000000 ""]))]},Pkg {name = P "b", ver = V [VN 2 "",VN 5 ""], desc = "", deps = [(P "d",(False,V [VN 0 ""],V [VN 2 ""]))]},Pkg {name = P "b", ver = V [VN 3 "",VN 0 ""], desc = "", deps = []},Pkg {name = P "b", ver = V [VN 5 "",VN 0 ""], desc = "", deps = [(P "d",(False,V [VN 4 "",VN 0 ""],V [VN 1000000 ""]))]},Pkg {name = P "c", ver = V [VN 4 "",VN 0 ""], desc = "", deps = []},Pkg {name = P "d", ver = V [VN 3 "",VN 0 ""], desc = "", deps = []},Pkg {name = P "d", ver = V [VN 5 "",VN 0 ""], desc = "", deps = [(P "e",(False,V [VN 0 ""],V [VN 1000000 ""]))]},Pkg {name = P "d", ver = V [VN 4 "",VN 5 ""], desc = "", deps = []},Pkg {name = P "e", ver = V [VN 5 "",VN 0 ""], desc = "", deps = []},Pkg {name = P "e", ver = V [VN 3 "",VN 0 ""], desc = "", deps = []}]

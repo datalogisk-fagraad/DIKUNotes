@@ -1,0 +1,4 @@
+package {
+  name bar;
+  description "The bar library";
+}

@@ -1,0 +1,9 @@
+DB [Pkg {name = P "foo", ver = V [VN 2 "",VN 3 ""],
+         desc = "The foo application",
+	 deps = [(P "bar",(True,V [VN 1 "",VN 0 ""],V [VN 1000000 ""]))]},
+    Pkg {name = P "bar", ver = V [VN 1 "",VN 0 ""],
+         desc = "The bar library", deps = []},
+    Pkg {name = P "bar", ver = V [VN 2 "",VN 1 ""],
+         desc = "The bar library, new API",
+	 deps = [(P "baz",(False,V [VN 3 "",VN 4 ""],V [VN 5 "",VN 0 "",VN 3 ""]))]},
+    Pkg {name = P "baz", ver = V [VN 6 "",VN 1 "",VN 2 ""], desc = "", deps = []}]

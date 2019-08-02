@@ -1,0 +1,24 @@
+package {
+  version 2.3;
+  name foo;
+  requires bar >= 1.0;
+  description "The foo application";
+}
+
+package {
+  name bar;
+  description "The bar library";
+  version 1.0;
+}
+
+package {
+  version 2.1;
+  name bar;
+  conflicts baz < 3.4, baz >= 5.0.3;
+  description "The bar library, new API";
+}
+
+package {
+  version 6.1.2;
+  name baz;
+}

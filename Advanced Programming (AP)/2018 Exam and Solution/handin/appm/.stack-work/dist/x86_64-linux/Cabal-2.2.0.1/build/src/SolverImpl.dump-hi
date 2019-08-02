@@ -1,0 +1,515 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-08 19:01:47.457889684 UTC
+
+interface appm-0.0.0-bBoXP3Z3yF8cAWvQVfHOK:SolverImpl 8043
+  interface hash: bab7fd3a9d0279aa4a3a11bcb0297eb8
+  ABI hash: 92ee2e95329010180c91566997774782
+  export-list hash: c6ea6f4a9a62b6ec17ed413a560eea69
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1f596daf84c7527444ae092b33472386
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  SolverImpl.doesntConflictWith
+  SolverImpl.findConsistentPackage
+  SolverImpl.findDuplicatePackages
+  SolverImpl.install
+  SolverImpl.isConsistentDB
+  SolverImpl.isRequiredBy
+  SolverImpl.normalize
+  SolverImpl.parseFile
+  SolverImpl.pkgCompare
+  SolverImpl.reqsAndConfs
+  SolverImpl.runSolver
+  SolverImpl.solve
+  SolverImpl.solve'
+  SolverImpl.sorted
+module dependencies: Defs Parser ParserImpl Utils
+package dependencies: array-0.5.2.0 base-4.11.1.0* binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      ghc-prim-0.5.2.0 integer-gmp-1.0.2.0 mtl-2.2.2 parsec-3.1.13.0
+                      text-1.2.3.0 transformers-0.5.5.0
+orphans: appm-0.0.0-bBoXP3Z3yF8cAWvQVfHOK:Utils
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+import  -/  Defs c8776ec9639bd8739e47c30a97e82c26
+  exports: 70baa90277fc6a1d9f89c14d3a2d95e0
+  Constrs c0c7f7e044a5960d9dcc1d7679b95764
+  DB 0e858781930e83bda69da5da2f88fc9e
+  Database e605cad1cf2485e27892e093ede2b8a9
+  ErrMsg e382a89c48b00d742ff8f78333a8dd20
+  P f14abd46365fcb136d54f66c84f72900
+  PConstr a4165aea2f2f6f83a06790a6694f2369
+  PName 4fd67735798f91f41256b7d11b8508d2
+  Pkg 49fa6cbb2d53aa2b800f192f4268a0c2
+  Sol 6fa7b2af0b6a1ae8c8e6d2ee2f37890f
+  deps 49fa6cbb2d53aa2b800f192f4268a0c2
+  desc 49fa6cbb2d53aa2b800f192f4268a0c2
+  maxV d6d6c8777f2c7674b040a5c5b6955b34
+  minV 8dfe015ddb5a3a272154e1f1ae689c38
+  name 49fa6cbb2d53aa2b800f192f4268a0c2
+  ver 49fa6cbb2d53aa2b800f192f4268a0c2
+import  -/  Parser 82ea54324bfd755d2541153c042d63dc
+  exports: 7bfe25a8cc0b498894dd24f1f2c7b6e1
+import  -/  ParserImpl 46bf9931bc64e18a78df069078657eaa
+  parseDatabase 7306d5891c22d25933d8757a34906561
+import  -/  Utils 64658fcf41d296a2e90c8c567eb8db7b
+  exports: 5eb66a298ff304e448a448d129117718
+  merge 73791c76f9e9f5b97e9d8711a1952f4e
+  satisfies 08adbc2ed2184e37d1239867c2b358e4
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.IO 1d5542cc02075c5e948018bfacea89c1
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  base-4.11.1.0:System.IO 1c239be44126f7b1ba512ea61300f4dc
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+46ada7d316b2690a9dedeaeb15c72c03
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   SolverImpl.$trModule3
+                   SolverImpl.$trModule1) -}
+2b496187be397a7b9fb55be863b3a236
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS SolverImpl.$trModule2) -}
+a6721d666c419e4e72035eef72e238a0
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SolverImpl"#) -}
+29615d7922dc86e6efaf238df7890ff8
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS SolverImpl.$trModule4) -}
+79d563bcb3135fcfc4d266598293883e
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("appm-0.0.0-bBoXP3Z3yF8cAWvQVfHOK"#) -}
+9f1622382998496044e0ecf4d8c5e944
+  $wgo ::
+    [(Defs.PName, (GHC.Types.Bool, Defs.Version, Defs.Version))]
+    -> (# [(Defs.PName, (GHC.Types.Bool, Defs.Version, Defs.Version))],
+          [(Defs.PName, (GHC.Types.Bool, Defs.Version, Defs.Version))] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+37b3e1b1ec0d502722e48efdb27dd148
+  $wisRequiredBy ::
+    Defs.Pkg
+    -> Defs.PName
+    -> GHC.Types.Bool
+    -> Defs.Version
+    -> Defs.Version
+    -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*U(1*U,U,A,A)><L,1*U><S,1*U><L,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: Defs.Pkg)
+                   (ww :: Defs.PName)
+                   (ww1 :: GHC.Types.Bool)
+                   (ww2 :: Defs.Version)
+                   (ww3 :: Defs.Version) ->
+                 case ww1 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case w of wild1 { Defs.Pkg ds4 ds5 ds6 ds7 ->
+                      case GHC.Base.eqString
+                             ds4 `cast` (Defs.N:PName[0])
+                             ww `cast` (Defs.N:PName[0]) of wild2 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> case Utils.$fOrdVersion_$c<= ww2 ds5 of wild3 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True -> Utils.$fOrdVersion_$c< ds5 ww3 } } } }) -}
+e58762687738016422ae597cced9ff8d
+  $wpkgCompare :: Defs.Version -> Defs.Version -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: Defs.Version) (ww1 :: Defs.Version) ->
+                 case GHC.Classes.$fEq[]_$c==
+                        @ Defs.VNum
+                        Defs.$fEqVNum
+                        ww1 `cast` (Defs.N:Version[0])
+                        ww `cast` (Defs.N:Version[0]) of wild {
+                   GHC.Types.False
+                   -> case Utils.$fOrdVersion_$c<= ww1 ww of wild1 {
+                        GHC.Types.False -> GHC.Types.GT GHC.Types.True -> GHC.Types.LT }
+                   GHC.Types.True -> GHC.Types.EQ }) -}
+d84e303125341b7a8daefdf2f653272f
+  doesntConflictWith :: Defs.Pkg -> Defs.Constrs -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(1*U,1*U,A,A)><S,1*U>,
+     Unfolding: (\ (p :: Defs.Pkg) (c :: Defs.Constrs) ->
+                 let {
+                   v :: Defs.Version
+                   = case p of wild { Defs.Pkg ds4 ds5 ds6 ds7 -> ds5 }
+                 } in
+                 let {
+                   pn :: Defs.PName
+                   = case p of wild { Defs.Pkg ds4 ds5 ds6 ds7 -> ds4 }
+                 } in
+                 letrec {
+                   go1 :: [(Defs.PName, (GHC.Types.Bool, Defs.Version, Defs.Version))]
+                          -> GHC.Types.Bool
+                     <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [(Defs.PName,
+                                (GHC.Types.Bool, Defs.Version, Defs.Version))]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.True
+                       : y ys
+                       -> case y of wild1 { (,) n ds1 ->
+                          case ds1 of wild2 { (,,) b lo hi ->
+                          let {
+                            ds2 :: GHC.Types.Bool <join 0> = go1 ys
+                          } in
+                          case GHC.Base.eqString
+                                 pn `cast` (Defs.N:PName[0])
+                                 n `cast` (Defs.N:PName[0]) of wild3 {
+                            GHC.Types.False -> ds2
+                            GHC.Types.True
+                            -> let {
+                                 $j :: GHC.Types.Bool <join 0>
+                                 = case b of wild4 {
+                                     GHC.Types.False -> GHC.Types.False GHC.Types.True -> ds2 }
+                               } in
+                               let {
+                                 $j1 :: GHC.Types.Bool <join 0>
+                                 = case GHC.Classes.$fEq[]_$c==
+                                          @ Defs.VNum
+                                          Defs.$fEqVNum
+                                          v `cast` (Defs.N:Version[0])
+                                          hi `cast` (Defs.N:Version[0]) of wild4 {
+                                     GHC.Types.False
+                                     -> case Utils.$fOrdVersion_$c<= v hi of wild5 {
+                                          GHC.Types.False -> $j GHC.Types.True -> ds2 }
+                                     GHC.Types.True -> $j }
+                               } in
+                               case GHC.Classes.$fEq[]_$c==
+                                      @ Defs.VNum
+                                      Defs.$fEqVNum
+                                      lo `cast` (Defs.N:Version[0])
+                                      v `cast` (Defs.N:Version[0]) of wild4 {
+                                 GHC.Types.False
+                                 -> case Utils.$fOrdVersion_$c<= lo v of wild5 {
+                                      GHC.Types.False -> $j GHC.Types.True -> $j1 }
+                                 GHC.Types.True -> $j1 } } } } }
+                 } in
+                 go1 c) -}
+9e4081177700794850825e4da2030eb1
+  findConsistentPackage ::
+    Defs.Pkg -> [Defs.Pkg] -> GHC.Base.Maybe Defs.Pkg
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U,U,U,U)><S,1*U> -}
+e006872add3d797030f544bfb09f2327
+  findDuplicatePackages :: Defs.Pkg -> [Defs.Pkg] -> [Defs.Pkg]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U,U,A,A)><S,1*U>,
+     Unfolding: (\ (p :: Defs.Pkg) (eta :: [Defs.Pkg]) ->
+                 GHC.List.filter
+                   @ Defs.Pkg
+                   (\ (pkg :: Defs.Pkg) ->
+                    case pkg of wild { Defs.Pkg ds4 ds5 ds6 ds7 ->
+                    case p of wild1 { Defs.Pkg ds1 ds2 ds3 ds10 ->
+                    case GHC.Base.eqString
+                           ds4 `cast` (Defs.N:PName[0])
+                           ds1 `cast` (Defs.N:PName[0]) of wild2 {
+                      GHC.Types.False -> GHC.Types.False
+                      GHC.Types.True
+                      -> GHC.Classes.$fEq[]_$c==
+                           @ Defs.VNum
+                           Defs.$fEqVNum
+                           ds5 `cast` (Defs.N:Version[0])
+                           ds2 `cast` (Defs.N:Version[0]) } } })
+                   eta) -}
+54b80d0d00799be1e1a284d4be31a4d7
+  install :: Defs.Database -> Defs.PName -> GHC.Base.Maybe Defs.Sol
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><L,U>,
+     Unfolding: (\ (ds :: Defs.Database) (pname :: Defs.PName) ->
+                 let {
+                   exit :: GHC.Base.Maybe Defs.Sol <join 0>
+                   = case SolverImpl.$wgo
+                            (GHC.Types.:
+                               @ (Defs.PName, Defs.PConstr)
+                               (pname, SolverImpl.install1)
+                               (GHC.Types.[]
+                                  @ (Defs.PName, Defs.PConstr))) of ww { (#,#) ww1 ww2 ->
+                     case SolverImpl.solve'
+                            ds
+                            ww1
+                            ww2
+                            (GHC.Types.[] @ (Defs.PName, Defs.Version)) of wild {
+                       [] -> GHC.Base.Nothing @ Defs.Sol
+                       : ipv ipv1 -> GHC.Base.Just @ Defs.Sol ipv } }
+                 } in
+                 letrec {
+                   go1 :: [Defs.Pkg] -> GHC.Base.Maybe Defs.Sol
+                     <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds1 :: [Defs.Pkg]) ->
+                     case ds1 of wild {
+                       [] -> GHC.Base.Nothing @ Defs.Sol
+                       : y ys
+                       -> case y of wild1 { Defs.Pkg ds4 ds5 ds6 ds7 ->
+                          case GHC.Base.eqString
+                                 ds4 `cast` (Defs.N:PName[0])
+                                 pname `cast` (Defs.N:PName[0]) of wild2 {
+                            GHC.Types.False -> go1 ys GHC.Types.True -> exit } } }
+                 } in
+                 go1 ds `cast` (Defs.N:Database[0])) -}
+d1bfe73e802c470dc6410f6347a1a277
+  install1 :: (GHC.Types.Bool, Defs.Version, Defs.Version)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((GHC.Types.True,
+                  Defs.minV1 `cast` (Sym (Defs.N:Version[0])),
+                  Defs.maxV1 `cast` (Sym (Defs.N:Version[0])))) -}
+e743da3c57abc64c7af6cb505a0bc3a8
+  isConsistentDB ::
+    Defs.Database -> Data.Either.Either GHC.Base.String Defs.Database
+  {- Arity: 1, Strictness: <S,1*U> -}
+1adea0c6455f6d4a1389686f5c72e169
+  isRequiredBy ::
+    Defs.Pkg -> (Defs.PName, Defs.PConstr) -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(1*U,U,A,A)><S(LS(SLL)),1*U(1*U,1*U(1*U,1*U,U))>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Defs.Pkg) (w1 :: (Defs.PName, Defs.PConstr)) ->
+                 case w1 of ww { (,) ww1 ww2 ->
+                 case ww2 of ww3 { (,,) ww4 ww5 ww6 ->
+                 SolverImpl.$wisRequiredBy w ww1 ww4 ww5 ww6 } }) -}
+9244390342892e1bcc17232121b1813d
+  normalize ::
+    Defs.Database -> Data.Either.Either GHC.Base.String Defs.Database
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Defs.Database) ->
+                 case ds `cast` (Defs.N:Database[0]) of wild {
+                   [] -> SolverImpl.normalize1
+                   : ipv ipv1
+                   -> SolverImpl.isConsistentDB
+                        (Data.OldList.sortBy @ Defs.Pkg SolverImpl.pkgCompare wild)
+                          `cast`
+                        (Sym (Defs.N:Database[0])) }) -}
+3bd5a879b3d2a595bc091a6be0dbbc7a
+  normalize1 :: Data.Either.Either GHC.Base.String Defs.Database
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Data.Either.Right
+                   @ GHC.Base.String
+                   @ Defs.Database
+                   (GHC.Types.[] @ Defs.Pkg) `cast` (Sym (Defs.N:Database[0]))) -}
+8b8a4bb54c847964c3b064d49e86ef55
+  parseFile ::
+    GHC.IO.FilePath
+    -> GHC.Types.IO (Data.Either.Either Defs.ErrMsg Defs.Database)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                SolverImpl.parseFile1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.Either.Either Defs.ErrMsg Defs.Database>_R)) -}
+2b2d59967f57b0ddf682a77f310fd621
+  parseFile1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either Defs.ErrMsg Defs.Database #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (path :: GHC.IO.FilePath)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.IO.Handle.FD.openFile1
+                        path
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv1
+                        ipv of ds { (#,#) ipv2 ipv3 ->
+                 (# ipv2, ParserImpl.parseDatabase ipv3 #) } }) -}
+601c4768f760b74e88646c6a2e030aab
+  pkgCompare :: Defs.Pkg -> Defs.Pkg -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LSLL),1*U(A,U,A,A)><S(LSLL),1*U(A,U,A,A)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Defs.Pkg) (w1 :: Defs.Pkg) ->
+                 case w of ww { Defs.Pkg ww1 ww2 ww3 ww4 ->
+                 case w1 of ww5 { Defs.Pkg ww6 ww7 ww8 ww9 ->
+                 SolverImpl.$wpkgCompare ww2 ww7 } }) -}
+c69ecd046a04edb9ab8d86e8f35c563f
+  reqsAndConfs :: Defs.Constrs -> (Defs.Constrs, Defs.Constrs)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (Data.OldList.partition
+                   @ (Defs.PName, (GHC.Types.Bool, Defs.Version, Defs.Version))
+                   SolverImpl.reqsAndConfs1) -}
+37984c0361d487a8a949ee2289ad8c38
+  reqsAndConfs1 ::
+    (Defs.PName, (GHC.Types.Bool, Defs.Version, Defs.Version))
+    -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(SLL)),1*U(A,1*U(1*U,A,A))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: (Defs.PName,
+                           (GHC.Types.Bool, Defs.Version, Defs.Version))) ->
+                 case ds of wild { (,) ds1 ds2 ->
+                 case ds2 of wild1 { (,,) bool ds3 ds4 -> bool } }) -}
+55cd1197209ef49f23d967854cfbbcbe
+  runSolver ::
+    [GHC.Types.Char] -> GHC.Base.String -> GHC.Types.IO [Defs.Sol]
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                SolverImpl.runSolver1
+                  `cast`
+                (<[GHC.Types.Char]>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <[Defs.Sol]>_R)) -}
+7a0dcc5ecc86ba074a4139cb7749f430
+  runSolver1 ::
+    [GHC.Types.Char]
+    -> GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [Defs.Sol] #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (test :: [GHC.Types.Char])
+                   (pkg :: GHC.Base.String)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.IO.Handle.FD.openFile1
+                        (GHC.CString.unpackAppendCString# SolverImpl.runSolver3 test)
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv1
+                        ipv of ds { (#,#) ipv2 ipv3 ->
+                 case (Text.Parsec.Prim.runPT
+                         @ GHC.Base.String
+                         @ Data.Functor.Identity.Identity
+                         @ GHC.Types.Char
+                         @ ()
+                         @ Defs.Database
+                         (ParserImpl.$s$fStream[]mtok @ GHC.Types.Char)
+                         ParserImpl.databaseParser1
+                           `cast`
+                         (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                                   <[GHC.Types.Char]>_R
+                                   <()>_R
+                                   <Data.Functor.Identity.Identity>_R
+                                   <Defs.Database>_R))
+                         GHC.Tuple.()
+                         (GHC.Types.[] @ GHC.Types.Char)
+                         ipv3)
+                        `cast`
+                      (Data.Functor.Identity.N:Identity[0]
+                           <Data.Either.Either
+                              Text.Parsec.Error.ParseError Defs.Database>_R) of wild {
+                   Data.Either.Left err
+                   -> SolverImpl.runSolver2 `cast` (GHC.Types.N:IO[0] <[Defs.Sol]>_R)
+                        ipv2
+                   Data.Either.Right db
+                   -> case db `cast` (Defs.N:Database[0]) of wild1 {
+                        []
+                        -> (# ipv2,
+                              case SolverImpl.$wgo
+                                     (GHC.Types.:
+                                        @ (Defs.PName, Defs.PConstr)
+                                        (pkg `cast` (Sym (Defs.N:PName[0])), SolverImpl.install1)
+                                        (GHC.Types.[]
+                                           @ (Defs.PName, Defs.PConstr))) of ww { (#,#) ww1 ww2 ->
+                              SolverImpl.solve'
+                                (GHC.Types.[] @ Defs.Pkg) `cast` (Sym (Defs.N:Database[0]))
+                                ww1
+                                ww2
+                                (GHC.Types.[] @ (Defs.PName, Defs.Version)) } #)
+                        : ipv4 ipv5
+                        -> case SolverImpl.isConsistentDB
+                                  (Data.OldList.sortBy @ Defs.Pkg SolverImpl.pkgCompare wild1)
+                                    `cast`
+                                  (Sym (Defs.N:Database[0])) of wild2 {
+                             Data.Either.Left ipv6
+                             -> SolverImpl.runSolver2 `cast` (GHC.Types.N:IO[0] <[Defs.Sol]>_R)
+                                  ipv2
+                             Data.Either.Right ndb
+                             -> (# ipv2,
+                                   case SolverImpl.$wgo
+                                          (GHC.Types.:
+                                             @ (Defs.PName, Defs.PConstr)
+                                             (pkg `cast` (Sym (Defs.N:PName[0])),
+                                              SolverImpl.install1)
+                                             (GHC.Types.[]
+                                                @ (Defs.PName,
+                                                   Defs.PConstr))) of ww { (#,#) ww1 ww2 ->
+                                   SolverImpl.solve'
+                                     ndb
+                                     ww1
+                                     ww2
+                                     (GHC.Types.[] @ (Defs.PName, Defs.Version)) } #) } } } } }) -}
+5a5ca8a29267f710a5cc956d823eb33d
+  runSolver2 :: GHC.Types.IO [Defs.Sol]
+  {- Unfolding: (GHC.Magic.noinline
+                   @ (forall a. [GHC.Types.Char] -> GHC.Types.IO a)
+                   GHC.IO.failIO1
+                     `cast`
+                   (forall (a :: <*>_N).
+                    <GHC.Base.String>_R ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                   @ [Defs.Sol]
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+2ed6fc3019961181af9bea03cbb54c8d
+  runSolver3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("../tests/BB/testfiles/"#) -}
+27e7fbb33ff2d3d0762f57404af72581
+  solve :: Defs.Database -> Defs.Constrs -> Defs.Sol -> [Defs.Sol]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><S,1*U><L,U>,
+     Unfolding: (\ (db :: Defs.Database)
+                   (c :: Defs.Constrs)
+                   (sol :: Defs.Sol) ->
+                 case SolverImpl.$wgo c of ww { (#,#) ww1 ww2 ->
+                 SolverImpl.solve' db ww1 ww2 sol }) -}
+2db5ca14512160daea9f0b3438c6d116
+  solve' ::
+    Defs.Database
+    -> Defs.Constrs -> Defs.Constrs -> Defs.Sol -> [Defs.Sol]
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><S,1*U><L,U><L,U> -}
+2dbb279244fdcf370cbbc380087e1181
+  sorted :: Defs.Database -> Defs.Database
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                SolverImpl.sorted1
+                  `cast`
+                (<Defs.Database>_R ->_R Sym (Defs.N:Database[0])) -}
+98aab848bcf0fb30053b529a91addd6c
+  sorted1 :: Defs.Database -> [Defs.Pkg]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Defs.Database) ->
+                 Data.OldList.sortBy
+                   @ Defs.Pkg
+                   SolverImpl.pkgCompare
+                   ds `cast` (Defs.N:Database[0])) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

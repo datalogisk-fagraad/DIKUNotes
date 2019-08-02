@@ -1,0 +1,288 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-08 09:46:59.421394876 UTC
+
+interface main:Main 8043
+  interface hash: 05f3828fe887bbf448d43c55b582538b
+  ABI hash: 7b65bba6029068a0d55fb95ebe82c28c
+  export-list hash: 563b2372571e058b08847af98b4e1442
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d219d13c475a806896c6dbe977c4d1f6
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.check
+  Main.main
+  Main.prettyVersion
+module dependencies: Defs Parser ParserImpl Solver SolverImpl Utils
+package dependencies: array-0.5.2.0 base-4.11.1.0* binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      ghc-prim-0.5.2.0 integer-gmp-1.0.2.0 mtl-2.2.2 parsec-3.1.13.0
+                      text-1.2.3.0 transformers-0.5.5.0
+orphans: main:Utils text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Err 5e26aa744981f14e0f1e4d29c44ac52e
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  base-4.11.1.0:System.Environment 7fdede11f96719870569cb0da1adac2f
+import  -/  base-4.11.1.0:System.IO 1c239be44126f7b1ba512ea61300f4dc
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  Defs 939981403a64797c8d0fa3fbf484bbbe
+  exports: c7af33238562f604e2baaf89a4270987
+  P fb951bf22272dc815176dbb7d70b3c59
+  V 9c1c145b1740d47ff450a730ad2d07fc
+  VN 965ca6aa56109f751dad4686b47c7162
+  Version e887542530e08af7f6e3809d845b18d6
+import  -/  Parser 04c3b7cbab1c32f58bbf574715c1ccfb
+  exports: e594bc1c3376ad36ae01ac9a8de010ad
+import  -/  ParserImpl 43e45c50f75eba53f43e22c7e46caa34
+  parseDatabase 691a12af14be8d0bd219ef96b9c4c173
+import  -/  Solver 104eca0f132fb2f73b7b0d1843b9a9a4
+  exports: 0f71e33efc63408dc7815577794ab214
+import  -/  SolverImpl c2a8c72f1ebaaa22e0beeddbdab58bf2
+  install 8746f81082eba7042ac449f4288ec4f3
+  normalize 3762f9f19140dba47d900da4d3af1631
+be86c9d078d3acbf19ba91fe74a24273
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+b09d86f2c49dd5176b544d8d13ddb6c5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+23b03bd7d075a00f5ad1ee10e6add7b8
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+e615cafa3211c1f133810aa5dc1f6b71
+  check ::
+    GHC.Base.String
+    -> Data.Either.Either GHC.Base.String a -> GHC.Types.IO a
+  {- Arity: 3, Strictness: <L,1*U><S,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.check1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Base.String>_R
+                 ->_R <Data.Either.Either GHC.Base.String a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <a>_R)) -}
+5ec75aa8410d019f629fe0b11610de8f
+  check1 ::
+    GHC.Base.String
+    -> Data.Either.Either GHC.Base.String a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 3, Strictness: <L,1*U><S,1*U><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (s :: GHC.Base.String)
+                   (ds :: Data.Either.Either GHC.Base.String a)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ds of wild {
+                   Data.Either.Left e
+                   -> case Main.check2 @ a e s
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+                      of {}
+                   Data.Either.Right a1 -> (# eta, a1 #) }) -}
+28c9530a351c7b8ab89c4f809fbadb7c
+  check2 :: GHC.Base.String -> GHC.Base.String -> GHC.Types.IO a
+  {- Arity: 2, Strictness: <B,U><B,1*U>x -}
+697b96cde5e2fa088bf56ba45adde28b
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+8c2db3a82cd8d5c8b5cb202b98933d42
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case System.Environment.getArgs1 s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   []
+                   -> case Main.main8
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                      of {}
+                   : dbfile ds
+                   -> case ds of wild1 {
+                        []
+                        -> case Main.main8
+                           ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                           of {}
+                        : pkg ds2
+                        -> case ds2 of wild2 {
+                             []
+                             -> case GHC.IO.Handle.FD.openFile1
+                                       dbfile
+                                       GHC.IO.IOMode.ReadMode
+                                       ipv of ds3 { (#,#) ipv2 ipv3 ->
+                                case GHC.IO.Handle.Text.hGetContents1
+                                       ipv3
+                                       ipv2 of ds4 { (#,#) ipv4 ipv5 ->
+                                case (Text.Parsec.Prim.runPT
+                                        @ GHC.Base.String
+                                        @ Data.Functor.Identity.Identity
+                                        @ GHC.Types.Char
+                                        @ ()
+                                        @ Defs.Database
+                                        (ParserImpl.$s$fStream[]mtok @ GHC.Types.Char)
+                                        ParserImpl.databaseParser1
+                                          `cast`
+                                        (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                                                  <[GHC.Types.Char]>_R
+                                                  <()>_R
+                                                  <Data.Functor.Identity.Identity>_R
+                                                  <Defs.Database>_R))
+                                        GHC.Tuple.()
+                                        (GHC.Types.[] @ GHC.Types.Char)
+                                        ipv5)
+                                       `cast`
+                                     (Data.Functor.Identity.N:Identity[0]
+                                          <Data.Either.Either
+                                             Text.Parsec.Error.ParseError
+                                             Defs.Database>_R) of wild3 {
+                                  Data.Either.Left err
+                                  -> case Main.main7 err
+                                     ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                                     of {}
+                                  Data.Either.Right db
+                                  -> let {
+                                       $j :: Defs.Database
+                                             -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                                         <join 1> {- Arity: 1, Strictness: <S,U> -}
+                                       = \ (a :: Defs.Database)[OneShot] ->
+                                         case SolverImpl.install
+                                                a
+                                                pkg `cast` (Sym (Defs.N:PName[0])) of wild4 {
+                                           GHC.Base.Nothing
+                                           -> case Main.main6
+                                              ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                                              of {}
+                                           GHC.Base.Just l
+                                           -> case GHC.IO.Handle.Text.hPutStr2
+                                                     GHC.IO.Handle.FD.stdout
+                                                     Main.main4
+                                                     GHC.Types.True
+                                                     ipv4 of ds5 { (#,#) ipv6 ipv7 ->
+                                              Main.main3 l ipv6 } }
+                                     } in
+                                     case db `cast` (Defs.N:Database[0]) of wild4 {
+                                       []
+                                       -> $j
+                                            (GHC.Types.[] @ Defs.Pkg)
+                                              `cast`
+                                            (Sym (Defs.N:Database[0]))
+                                       : ipv6 ipv7
+                                       -> case SolverImpl.isConsistentDB
+                                                 (Data.OldList.sortBy
+                                                    @ Defs.Pkg
+                                                    SolverImpl.pkgCompare
+                                                    wild4)
+                                                   `cast`
+                                                 (Sym (Defs.N:Database[0])) of wild5 {
+                                            Data.Either.Left e
+                                            -> case Main.main2 e
+                                               ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                                               of {}
+                                            Data.Either.Right a -> $j a } } } } }
+                             : ipv2 ipv3
+                             -> case Main.main8
+                                ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                                of {} } } } }) -}
+a882cd55e9c005392d038336b9d0d62e
+  main2 :: GHC.Base.String -> GHC.Types.IO Defs.Database
+  {- Arity: 1, Strictness: <B,U>x -}
+61d8ce8e7ade5befb7b833e3584e2ef7
+  main3 ::
+    [(Defs.PName, Defs.Version)]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,1*U><S,U> -}
+2d2302989f4cead3e06cd389fb068585
+  main4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main5) -}
+e3572b74102fc4a650ae9d3472253cd5
+  main5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("installing packages:"#) -}
+062966910f881f98b54d1eadd2721b55
+  main6 :: GHC.Types.IO ()
+  {- Strictness: x -}
+ea21e97c367b4487883f08e0724a453a
+  main7 :: Text.Parsec.Error.ParseError -> GHC.Types.IO Defs.Database
+  {- Arity: 1, Strictness: <B,1*U(U(1*U,U,U),1*U)>x -}
+6649dd525676f1926f5982a1f7b0ffe0
+  main8 :: GHC.Types.IO ()
+  {- Strictness: x -}
+62a3ba7b5d67078e97edbefb04308b91
+  main9 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+347fd5599cd6bbcfe4c26b111872ecfb
+  prettyVersion :: Defs.Version -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Defs.Version) ->
+                 case Main.prettyVersion_go ds `cast` (Defs.N:Version[0]) of wild {
+                   [] -> GHC.Types.[] @ GHC.Types.Char
+                   : x xs1
+                   -> Data.OldList.intercalate_$spoly_go
+                        @ GHC.Types.Char
+                        x
+                        (Data.OldList.prependToAll
+                           @ [GHC.Types.Char]
+                           Main.prettyVersion1
+                           xs1) }) -}
+0e63216c5cfebe1291b67e8ad9f535ef
+  prettyVersion1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.prettyVersion2) -}
+3323077038499029b67002fad99b0f14
+  prettyVersion2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("."#) -}
+78cc18dd0310b7da5771f5d7d5860d95
+  prettyVersion_go :: [Defs.VNum] -> [[GHC.Types.Char]]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

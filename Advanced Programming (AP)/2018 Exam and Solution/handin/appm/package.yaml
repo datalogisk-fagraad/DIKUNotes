@@ -1,0 +1,39 @@
+name: appm
+
+# The packages we depend on
+dependencies:
+- base             # For built-in functions like `length`
+- containers       # For Data.Map
+- parsec           # Uncomment this if you use Parsec for the parser
+- tasty            # The test framework Tasty
+- tasty-hunit      # unit-testing with Tasty
+- QuickCheck       # for property-based testing
+- tasty-quickcheck # QC-testing with Tasty
+
+
+# The basic library
+library:
+  source-dirs: src
+  exposed-modules:
+    - Defs
+    - Utils
+    - Parser
+    - Solver
+
+# A simple command-line driver, that uses the library
+executable:
+  main: Main.hs
+  source-dirs: src
+
+# The test-suite
+tests:
+  blackbox-tests:
+    main: Main.hs
+    source-dirs: tests/BB
+    dependencies:
+    - appm
+  quickcheck-tests:
+    main: Main.hs
+    source-dirs: tests/QC
+    dependencies:
+    - appm

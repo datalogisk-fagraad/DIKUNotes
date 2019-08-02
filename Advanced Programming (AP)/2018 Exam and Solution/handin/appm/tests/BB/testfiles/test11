@@ -1,0 +1,6 @@
+package {
+  name foo;
+  version 2.3qwe;
+  description "The foo application";
+  requires bar >= 1.0;
+}
