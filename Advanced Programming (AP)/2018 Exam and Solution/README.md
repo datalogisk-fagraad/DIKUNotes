@@ -11,7 +11,7 @@ stack setup --resover lts-12.6
 stack config set resolver lts-12.6
 ```
 This will set up the environment to the (2018) right GHC version.
-3. Run tests by navigating to `handing/appm` and run 
+3. Run tests by navigating to `handin/appm` and run 
 ```
 stack test
 ```
