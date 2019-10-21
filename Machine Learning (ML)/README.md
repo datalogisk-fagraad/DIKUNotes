@@ -1,0 +1,1 @@
+As of 2019, the ML course has its [own website](https://sites.google.com/diku.edu/machine-learning-courses/ml) that provides useful information such as course structure, exam, prerequisites and content.
