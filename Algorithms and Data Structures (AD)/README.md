@@ -14,4 +14,4 @@ As to how you are supposed to structure your outlines, a former course participa
 
 For the 10-15 minute discussion, if you want aim for a top grade, you have to either spend a considerable amount of time learning the course material or depend on being lucky.
 
-These can be found at: <https://github.com/shmulvad/AD-notes>
+These can be found at: <https://github.com/shmulvad/AD-notes>. A modified version of these, in a slightly different form, can be [found on Notion](https://www.notion.so/lukasft/AD-noter-3fcbd7567c334514b2ad62ba4dceb9d2). 
